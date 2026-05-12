@@ -1,0 +1,13 @@
+.theme_switch {
+	background-color: var(--secondary-color-light);
+	border-radius: 10px;
+}
+.theme_switch img:last-child {
+	display: none;
+}
+.dark-mode .theme_switch img:first-child {
+	display: none;
+}
+.dark-mode .theme_switch img:last-child {
+	display: block;
+}

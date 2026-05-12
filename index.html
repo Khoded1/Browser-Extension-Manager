@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/toggle.css" />
+		<link rel="stylesheet" href="css/themeMode.css" />
+		<title>Browser extensions manager UI</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo-container flex">
+				<img src="assets/images/logo.svg" alt="logo" class="logo" />
+				<button class="btn theme_switch" id="theme_switch">
+					<img src="assets/images/icon-moon.svg" alt="" />
+					<img src="assets/images/icon-sun.svg" alt="" />
+				</button>
+			</div>
+
+			<div class="header flex">
+				<h1>Extensions List</h1>
+				<div class="tab_container">
+					<button class="btn btns active" id="btn_all" data-filter="all">
+						All
+					</button>
+					<button class="btn btns" id="btn_active" data-filter="active">
+						Active
+					</button>
+					<button
+						class="btn btns"
+						id="btn_inactive"
+						data-filter="inactive"
+					>
+						Inactive
+					</button>
+				</div>
+			</div>
+			<main class="extensions_list_container"></main>
+		</div>
+	</body>
+	<script src="js/darkMode.js"></script>
+	<script type="module" src="js/script.js"></script>
+	<script src="js/toggleSwitch.js"></script>
+</html>
+
+<!-- <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Your Name Here</a>.
+  </div> -->
